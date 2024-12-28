@@ -1,0 +1,20 @@
+# run: conda env create --file environment.yml
+name: derain
+channels:
+  - pytorch
+  - defaults
+dependencies:
+  - python=3.8
+  - pip=21.0.1
+  - cudatoolkit=11.0
+  - pytorch::pytorch=1.7.1
+  - pytorch::torchvision=0.8.2
+  - pytorch::torchaudio=0.7.2
+  - pip:
+      - opencv-python
+      - scipy
+      - scikit-image
+      - kornia==0.5.8
+      - matplotlib
+      - tqdm
+      - tensorboard
